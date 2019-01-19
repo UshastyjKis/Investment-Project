@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="184.0" layoutY="-1.0" prefHeight="124.0" prefWidth="517.0" style="-fx-background-image: url('file:C:/Users/Ushas/IdeaProjects/InvestmentProject/src/Images/background3.jpg');">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="30.0" prefHeight="65.0" prefWidth="380.0" text="Investment Project" textFill="#fffefe">
+               <font>
+                  <Font name="Calisto MT Bold Italic" size="50.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TabPane id="tabPane" fx:id="tabPane" layoutY="125.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="574.0" prefWidth="700.0" side="LEFT" stylesheets="@../CSS/TabPane.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab>
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="591.0" prefWidth="521.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Button fx:id="buttonNext1" layoutX="307.0" layoutY="487.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #CCCCCC;" text="ДАЛЕЕ" textFill="#111010">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Button>
+                        <TextField fx:id="projectIC" layoutX="29.0" layoutY="391.0" prefHeight="51.0" prefWidth="394.0" />
+                        <Label layoutX="29.0" layoutY="349.0" prefHeight="42.0" prefWidth="480.0" text="ВВЕДИТЕ ВЕЛИЧИНУ ПЕРВОНАЧАЛЬНЫХ ИНВЕСТИЦИЙ" textFill="#575555">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="discontRate" layoutX="29.0" layoutY="274.0" prefHeight="51.0" prefWidth="394.0" />
+                        <Label layoutX="29.0" layoutY="232.0" prefHeight="42.0" prefWidth="394.0" text="ВВЕДИТЕ СТАВКУ ДИСКОТИРОВАНИЯ" textFill="#575555">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="projectPeriod" layoutX="29.0" layoutY="166.0" prefHeight="51.0" prefWidth="394.0" />
+                        <Label layoutX="29.0" layoutY="114.0" prefHeight="42.0" prefWidth="427.0" text="ВВЕДИТЕ ПЕРИОД РЕАЛИЗАЦИИ ПРОЕКТА" textFill="#575555">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="projectName" layoutX="29.0" layoutY="56.0" prefHeight="51.0" prefWidth="394.0" />
+                        <Label layoutX="29.0" layoutY="14.0" prefHeight="42.0" prefWidth="394.0" text="ВВЕДИТЕ НАЗВАНИЕ ПРОЕКТА" textFill="#575555">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="112.0" prefWidth="136.0" text="БАЗОВЫЕ ДАННЫЕ">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+               </graphic>
+          </Tab>
+          <Tab>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="575.0" prefWidth="363.0">
+                     <children>
+                        <ScrollPane prefHeight="452.0" prefWidth="517.0" style="-fx-background-color: #CCCCCC;">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="23.0" prefHeight="39.0" prefWidth="347.0" text="ВВЕДИТЕ ДЕНЕЖНЫЙ ПОТОК 1 ГОДА" textFill="#575555">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="cashFlow1" layoutX="72.0" layoutY="76.0" prefHeight="49.0" prefWidth="369.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <Button fx:id="buttonNext2" layoutX="380.0" layoutY="487.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #CCCCCC;" text="ДАЛЕЕ" textFill="#111010">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonBack1" layoutX="20.0" layoutY="487.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #CCCCCC;" text="НАЗАД" textFill="#111010">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonAddNewFlow" layoutX="148.0" layoutY="487.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="220.0" style="-fx-background-color: #CCCCCC;" text="ДОБАВИТЬ ДЕНЕЖНЫЙ ПОТОК" textFill="#111010">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="123.0" prefWidth="141.0" text="ДЕНЕЖНЫЕ ПОТОКИ">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+               </graphic>
+          </Tab>
+            <Tab>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="buttonCount" layoutX="309.0" layoutY="486.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #CCCCCC;" text="РАССЧИТАТЬ" textFill="#111010">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonBack2" layoutX="143.0" layoutY="486.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #CCCCCC;" text="НАЗАД" textFill="#111010">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <TextArea fx:id="resultField" prefHeight="466.0" prefWidth="517.0" />
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="139.0" prefWidth="139.0" text="ИТОГОВЫЙ РАСЧЕТ">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="buttonNewProject" layoutX="29.0" layoutY="19.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="123.0" style="-fx-background-color: #CCCCCC;" text="НОВЫЙ ПРОЕКТ" textFill="#111010">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
